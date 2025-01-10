@@ -5,12 +5,10 @@ import Sidebar from './Sidebar.vue'
 <template>
   <div class="common-layout">
     <el-container>
-      <el-container>
-        <el-aside>
-          <Sidebar />
-        </el-aside>
-        <el-main><slot /></el-main>
-      </el-container>
+      <el-aside>
+        <Sidebar />
+      </el-aside>
+      <el-main><slot /></el-main>
     </el-container>
   </div>
 </template>
@@ -18,6 +16,6 @@ import Sidebar from './Sidebar.vue'
 <style scoped>
   .el-aside {
   width: max-content !important;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 </style>
